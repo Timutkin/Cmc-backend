@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database: postgresql
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/crypto
+    username: postgres
+    password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: timutkin
+    password: root
+    queuename: q.parsecmc
+
+
+
+
+

@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:14
+    container_name: postgres-crypto
+    environment:
+      POSTGRES_DB: crypto
+      POSTGRES_USER: timutkin
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
+
+
+volumes:
+  postgres:
+    driver: local
